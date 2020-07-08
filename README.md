@@ -1,6 +1,9 @@
-# AI Programming with Python Project
+<p float="left">
+  <img src="https://github.com/joshuacayanan/aipnd-project/blob/master/assets/deep-learning.png" width="70" align="right"/> 
+  <img src="https://github.com/joshuacayanan/aipnd-project/blob/master/assets/flower.png" width="70" align="right"/>
+</p>
 
-## About
+# AI Programming with Python Project
 Project code for Udacity's AI Programming with Python Nanodegree program. In this project, students first develop code for an image classifier built with PyTorch, then convert it into a command line application.
 
 The image classifier aims to recognize different species of flowers that commonly occur in the United Kingdom. The model has been trained using the [102 Cateogry Flower Dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) from the Visual Geometry Group at the University of Oxford. 
@@ -29,6 +32,12 @@ A sample output of the classification model within a Jupyter Notebook is shown b
 - [ ] Add 'Description of files' section to README
 - [ ] Add model architecture section to README
 - [ ] Continue training model, try to get higher accuracy
+
+## Credits
+Student: Joshua Cayanan
+  
+_Flower_ icon in readme header made by [Freepik](https://www.flaticon.com/free-icon/flower_2918004) from [www.flaticon.com](www.flaticon.com)  
+_Deep Learning_ icon in readme header made by [Becris](https://www.flaticon.com/free-icon/deep-learning_2103787) from [www.flaticon.com](www.flaticon.com)
 
 ## Copyright
 This project is licensed under the terms of the [MIT license](https://github.com/joshuacayanan/aipnd-project/blob/master/LICENSE) and protected by the [Udacity Honor Code](https://www.udacity.com/legal/en-us/honor-code) and [Community Code of Conduct](https://www.udacity.com/legal/en-us/honor-conduct).
