@@ -28,8 +28,33 @@ A sample output of the classification model within a Jupyter Notebook is shown b
 - numpy
 - json
 
+## Description of Files
+Python script files:
+|filename     |description      |
+|---          |---              |
+|Image Classifier Project.ipynb| Jupyter Notebook of project code with explanatory text |
+|get_input_args.py | Two functions to retrieve user command line inputs for training and prediction scripts |
+|load_checkpoint.py | Function to load parameters of a trained network from checkpoint.pth file |
+|load_data.py | Two functions, one that loads data for training and one that loads a single file to be fed into classifier model. Contains image transform code |
+|predict.py | Calls the prediction_model.py function using user command line inputs from get_input_args.py |
+|prediction_model.py | Function that feeds an image into classifier neural network and return prediction with associated probability |
+|save_checkpoint.py | Function that saves parameters of a trained network for later use |
+|train.py | Calls the train_model.py function using user command line inputs from get_input_args.py and generates checkpoint.pth output file using save_checkpoint.py function |
+|train_model.py | Function that builds classifier neural network using PyTorch torchvision models subpackage and user defined layers. Training and validation functionality |
+|workspace_utils.py | Keeps Udacity workspace active during training |
+
+Input files:
+|filename     |description      |
+|---          |---              |
+|cat_to_name.json | Dictionary of integers as keys and actual flower names as values |
+
+
+Output files:
+|filename     |description      |
+|---          |---              |
+|checkpoint.pth | PyTorch model checkpoint file, used to rebuild trained model |
+
 ## To-Do List
-- [ ] Add 'Description of files' section to README
 - [ ] Add model architecture section to README
 - [ ] Continue training model, try to get higher accuracy
 
