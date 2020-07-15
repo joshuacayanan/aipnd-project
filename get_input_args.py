@@ -37,7 +37,7 @@ def get_input_args_train():
     parser.add_argument('--learning_rate', type = float, default = 0.01, help = 'learning rate')
     parser.add_argument('--hidden_units', type = int, default = 1024, help = 'number of hidden units in first layer of classifiier portion of network')
     parser.add_argument('--epochs', type = int, default = 5, help = 'number of epochs')
-    parser.add_argument('--gpu', type = str, default = 'cpu', help = 'device to use for training, choose "cuda" for gpu, else default is "cpu"')
+    parser.add_argument('--gpu', action = 'store_true', default = False, help = 'call --gpu flag if cuda is to be used, else will default to cpu')
     
     return parser.parse_args()
 

@@ -11,7 +11,7 @@ The image classifier aims to recognize different species of flowers that commonl
 As part of the overall application architecture, pre-trained deep learning models from the torchvision models subpackage were used (vgg16 or densenet121). The classifier portions of the models were replaced with the student's work using beginner knowledge of fully connected network architecture. 
 
 ## Project Status
-The model was trained over four epochs with a testing accuracy of 81%. 
+The model was trained over 20 epochs with a testing accuracy of 92%. 
 
 A sample output of the classification model within a Jupyter Notebook is shown below. The top image shows the actual species and the bottom horizontal bar graph plots the model's predictions with associated probabilities.
 
@@ -27,6 +27,17 @@ A sample output of the classification model within a Jupyter Notebook is shown b
 - matplotlib
 - numpy
 - json
+
+## Network Architecture
+I used the pre-trained `densenet121` model and froze the features portion of the neural network that contains the convolution and pooling layers. I replaced the classifier portion, the fully connected layers, with the following code:
+```python
+classifier = nn.Sequential(nn.Linear(1024, 512),
+                           nn.ReLU(),
+                           nn.Dropout(p = 0.5),
+                           nn.Linear(512, 102),
+                           nn.LogSoftmax(dim = 1))
+model.classifier = classifier
+```
 
 ## Description of Files
 Python script files:
@@ -55,8 +66,8 @@ Output files:
 |checkpoint.pth | PyTorch model checkpoint file, used to rebuild trained model |
 
 ## To-Do List
-- [ ] Add model architecture section to README
-- [ ] Continue training model, try to get higher accuracy
+- [x] Add model architecture section to README
+- [x] Continue training model, try to get higher accuracy
 
 ## Credits
 Student: Joshua Cayanan

@@ -23,6 +23,10 @@ learning_rate = in_arg.learning_rate
 hidden_units = in_arg.hidden_units
 epochs = in_arg.epochs
 gpu = in_arg.gpu
+if gpu:
+    gpu = 'cuda'
+else:
+    gpu = 'cpu'
 
 #Call function to train model, return model parameters
 classifier_layers, model_state, optimizer_state = train_model(data_dir, arch, learning_rate, hidden_units, epochs, gpu)
