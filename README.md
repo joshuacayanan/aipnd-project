@@ -6,7 +6,7 @@
 # AI Programming with Python Project
 Project code for Udacity's AI Programming with Python Nanodegree program. In this project, students first develop code for an image classifier built with PyTorch, then convert it into a command line application.
 
-The image classifier aims to recognize different species of flowers that commonly occur in the United Kingdom. The model has been trained using the [102 Cateogry Flower Dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) from the Visual Geometry Group at the University of Oxford. 
+The image classifier aims to recognize different species of flowers that commonly occur in the United Kingdom. The model has been trained using the [102 Category Flower Dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) from the Visual Geometry Group at the University of Oxford. 
 
 As part of the overall application architecture, pre-trained deep learning models from the torchvision models subpackage were used (vgg16 or densenet121). The classifier portions of the models were replaced with the student's work using beginner knowledge of fully connected network architecture. 
 
